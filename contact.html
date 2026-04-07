@@ -1,0 +1,31 @@
+</html><!-- ===== contact.html ===== --><!DOCTYPE html><html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Зворотний зв'язок</h1>
+</header>
+<section>
+  <img src="contact.jpg" alt="Контакти" width="500">
+  <form onsubmit="sendMessage(event)">
+    <label>Ім'я:</label><br>
+    <input type="text" required><br>
+    <label>Email:</label><br>
+    <input type="email" required><br>
+    <label>Повідомлення:</label><br>
+    <textarea required></textarea><br>
+    <button type="submit">Надіслати</button>
+  </form>
+  <p id="msg"></p>
+</section>
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+  document.getElementById('msg').innerText = "Дякуємо! Ми зв'яжемось з вами.";
+}
+</script>
+</body>
+</html>
